@@ -1,6 +1,6 @@
 class one{
-    String Name;
-    int Age;
+    protected String Name;
+    protected int Age;
     void output(){
         System.out.println("Name is :" + Name);
         System.out.println("Age is :" + Age);
