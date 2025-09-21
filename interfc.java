@@ -3,14 +3,23 @@
     int Age = 21;
     void show(); // public and abstract are in-built in interface
     void output();
+   default void name(){
+    System.out.println("default method");
+   }
     
 }
-class Outerinterfc implements Innerinterfc{
+interface Middleinterfc {
+    void add();
+}
+class Outerinterfc implements Innerinterfc , Middleinterfc{
    public void show(){
         System.out.println("show method");
     }
     public void output(){
         System.out.println("output method");
+    }
+    public void add(){
+        System.out.println("add method");
     }
 }
 public class interfc {
