@@ -12,10 +12,14 @@ class child extends Parent{
     child(){
         System.out.println("child constructor called");
     }
+    void air(){
+        System.out.println("hellow method");
+    }
 }
 public class ConstructorChainingDemo {
     public static void main(String[] args) {
         child c1 = new child();
+        c1.air();
         
     }
 }
